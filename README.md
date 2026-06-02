@@ -1,18 +1,83 @@
-# React + Vite
+# calc
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**`calc`** — это корневой модуль проекта, представляющий собой высокопроизводительный движок для финансовых расчетов, математической аналитики и построения графиков.
 
-Currently, two official plugins are available:
+Это проект разработан на базе **React** и сборочного инструмента **Vite**, обеспечивающий молниеносную компиляцию кода и горячее обновляемость (HMR) интерфейса во время разработки.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Ключевые возможности
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Мгновенная компиляция:** Использование Vite позволяет мгновенно перезапускать сервер разработки и обновлять компоненты без полной пересборки.
+- **Интеллектуальная оптимизация:** Включен **React Compiler** для автоматической оптимизации ререндеринга компонентов (минимизация `useMemo`, `useCallback`).
+- **Строгая проверка кода:** Настроена современная конфигурация ESLint с базовыми правилами для обеспечения чистоты и читаемости кода.
+- **Модульная структура:** Готовая структура для разделения логики расчетов (`utils/`) и UI компонентов (`components/`).
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Технологии и стек
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+
+- **React 18+**: Современная библиотека для построения интерфейсов.
+- **Vite**: Экосистема сборки с поддержкой ES-модулей "из коробки" и HMR.
+- **ESLint + Prettier**: Поддержка стандартов кодирования (пока JS, но легко расширяется до TypeScript).
+- **React Compiler**: Встроенная оптимизация обновлений состояния.
+
+### Build Tools & Dev Experience
+
+- **Hot Module Replacement (HMR)**: Мгновенная подмена модулей при сохранении файла.
+- **Bundling**: Автоматическая оптимизация путей и импортов.
+
+---
+
+## 📦 Установка
+
+1. **Установите зависимости:**
+
+   ```bash
+   npm install
+   # или
+   pnpm install
+   # или
+   yarn install
+   ```
+
+2. **Запустите сервер разработки:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Откройте указанную в консоли ссылку (обычно `http://localhost:5173`) в браузере.
+
+3. **Соберите проект для продакшена:**
+
+   ```bash
+   npm run build
+   ```
+
+   Оптимизированный код появится в папке `dist/`.
+
+---
+
+## 📂 Структура проекта
+
+```three
+
+calc/
+├── src/
+│   ├── components/   # Визуальные компоненты интерфейса
+│   ├── utils/        # Библиотека утилит для расчетов
+│   ├── hooks/        # Кастомные хуки
+│   └── App.jsx       # Точка входа в приложение
+├── vite.config.js    # Конфигурация Vite и плагины
+├── package.json       # Зависимости и скрипты
+└── eslint.config.js   # Настройки линтера
+```
+
+---
+
+## Лицензия
+
+Данный проект распространяется согласно лицензии MIT. См. файл `LICENSE` для деталей.
