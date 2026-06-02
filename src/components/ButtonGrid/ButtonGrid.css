@@ -1,0 +1,40 @@
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+.button-base {
+	padding: 20px;
+	font-size: 1.2rem;
+	color: #ffffff;
+	background-color: #4a4a4a;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.operator {
+	background-color: #f39c12;
+}
+
+.operator:hover {
+	background-color: #e67e22;
+}
+
+.equals {
+	background-color: #27ae60;
+}
+
+.equals:hover {
+	background-color: #2ecc71;
+}
+
+.clear {
+	background-color: #e74c3c;
+}
+
+.clear:hover {
+	background-color: #c0392b;
+}

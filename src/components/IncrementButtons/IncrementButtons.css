@@ -1,0 +1,33 @@
+.increment-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.increment,
+.decrement {
+	width: 48%;
+	padding: 15px;
+	font-size: 1.2rem;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.increment {
+	background-color: #3498db;
+}
+
+.increment:hover {
+	background-color: #2980b9;
+}
+
+.decrement {
+	background-color: #9b59b6;
+}
+
+.decrement:hover {
+	background-color: #8e44ad;
+}
